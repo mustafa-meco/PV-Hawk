@@ -13,13 +13,15 @@ jupyterlab
 deepdiff==5.7.0
 hypothesis[numpy]==6.31.6
 
-# additional for Mask R-CNN
+# additional for Mask R-CNN TF2
 scikit-image==0.16.2
 cython==0.29.21
-keras==2.1.5
+tensorflow>=2.4.0
+keras>=2.4.0
 h5py==2.10.0
 imgaug==0.2.9
 IPython[all]
+protobuf==3.20.0
 
 # additional for OpenSfM
 cloudpickle==0.4.0

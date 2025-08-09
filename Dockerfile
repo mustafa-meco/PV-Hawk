@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.15.2-gpu-py3
+FROM tensorflow/tensorflow:2.14.0-gpu
 
 WORKDIR /
 
@@ -141,12 +141,12 @@ WORKDIR /pvextractor
 
 ###############################################################################
 #
-#                          Setup Mask R-CNN
+#                          Setup Mask R-CNN TF2
 #
 ###############################################################################
 
-COPY ./extractor/segmentation/Mask_RCNN /pvextractor/extractor/segmentation/Mask_RCNN
+COPY ./extractor/segmentation/Mask_RCNN_TF2 /pvextractor/extractor/segmentation/Mask_RCNN_TF2
 
-WORKDIR /pvextractor/extractor/segmentation/Mask_RCNN
+WORKDIR /pvextractor/extractor/segmentation/Mask_RCNN_TF2
 RUN python setup.py install
 WORKDIR /pvextractor
