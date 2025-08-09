@@ -39,3 +39,14 @@ Sphinx>=7.1.0
 six>=1.16.0
 xmltodict>=0.13.0
 wheel>=0.40.0
+
+# API dependencies (optional - install separately if using API mode)
+# pip install -r api/requirements.txt for API functionality
+# FastAPI and dependencies
+# fastapi>=0.104.1
+# uvicorn[standard]>=0.24.0
+# pydantic>=2.5.0
+# PyJWT>=2.8.0
+# python-multipart>=0.0.6
+# psutil>=5.9.6
+# pynvml>=11.5.0
